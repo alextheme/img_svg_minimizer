@@ -1,0 +1,20 @@
+{
+  "name": "imgminimizer_node",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "webp": "node app.js --webp",
+    "svg": "node app.js --svg",
+    "all": "node app.js --all"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "imagemin": "^8.0.1",
+    "imagemin-svgo": "^10.0.1",
+    "imagemin-webp": "^7.0.0"
+  }
+}

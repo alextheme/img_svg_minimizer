@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>svg</title>
+    <style>
+        :root {
+            --red: #ff6c6c;
+            --green: #00ff00;
+        }
+        .wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -20px -20px 0;
+        }
+        .s {
+            display: block;
+            width: 200px;
+            height: 200px;
+            margin: 0 20px 20px 0;
+            background: #d3d3d3;
+        }
+        .green {
+            border-radius: 5px;
+            border: 4px solid var(--green);
+        }
+        .red {
+            border-radius: 5px;
+            border: 4px solid var(--red);
+        }
+        .bg1 {
+            border-radius: 5px;
+            border: 4px solid var(--green);
+            background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20353.6%20327.4%22%20style%3D%22enable-background%3Anew%200%200%20353.6%20327.4%22%20xml%3Aspace%3D%22preserve%22%3E%0D%0A%20%20%3ClinearGradient%20id%3D%22a%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%22311.784%22%20y1%3D%2261.375%22%20x2%3D%22384.663%22%20y2%3D%2299.061%22%3E%0D%0A%20%20%20%20%3Cstop%20offset%3D%220%22%20style%3D%22stop-color%3A%23fff%22%2F%3E%0D%0A%20%20%20%20%3Cstop%20offset%3D%22.007%22%20style%3D%22stop-color%3A%23f6f6f6%22%2F%3E%0D%0A%20%20%20%20%3Cstop%20offset%3D%22.048%22%20style%3D%22stop-color%3A%23c8c8c8%22%2F%3E%0D%0A%20%20%20%20%3Cstop%20offset%3D%22.093%22%20style%3D%22stop-color%3A%239d9d9d%22%2F%3E%0D%0A%20%20%20%20%3Cstop%20offset%3D%22.142%22%20style%3D%22stop-color%3A%23777%22%2F%3E%0D%0A%20%20%20%20%3Cstop%20offset%3D%22.195%22%20style%3D%22stop-color%3A%23575757%22%2F%3E%0D%0A%20%20%20%20%3Cstop%20offset%3D%22.254%22%20style%3D%22stop-color%3A%233b3b3b%22%2F%3E%0D%0A%20%20%20%20%3Cstop%20offset%3D%22.32%22%20style%3D%22stop-color%3A%23252525%22%2F%3E%0D%0A%20%20%20%20%3Cstop%20offset%3D%22.397%22%20style%3D%22stop-color%3A%23141414%22%2F%3E%0D%0A%20%20%20%20%3Cstop%20offset%3D%22.493%22%20style%3D%22stop-color%3A%23090909%22%2F%3E%0D%0A%20%20%20%20%3Cstop%20offset%3D%22.627%22%20style%3D%22stop-color%3A%23020202%22%2F%3E%0D%0A%20%20%20%20%3Cstop%20offset%3D%221%22%20style%3D%22stop-color%3A%23000%22%2F%3E%0D%0A%20%20%3C%2FlinearGradient%3E%0D%0A%20%20%3Cpath%20d%3D%22M318.6%2078.4c0%208.5%2013%2015%2031.3%2015%201.3%200%202.5%200%203.7-.1v-30c-1.1%200-2.2-.1-3.3-.1-22.1.1-31.7%207.8-31.7%2015.2z%22%20style%3D%22fill%3Aurl(%23a)%22%2F%3E%0D%0A%20%20%3ClinearGradient%20id%3D%22b%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%22103.172%22%20y1%3D%2253.995%22%20x2%3D%22194.36%22%20y2%3D%22101.149%22%3E%0D%0A%20%20%20%20%3Cstop%20offset%3D%220%22%20style%3D%22stop-color%3A%23fff%22%2F%3E%0D%0A%20%20%20%20%3Cstop%20offset%3D%22.007%22%20style%3D%22stop-color%3A%23f6f6f6%22%2F%3E%0D%0A%20%20%20%20%3Cstop%20offset%3D%22.048%22%20style%3D%22stop-color%3A%23c8c8c8%22%2F%3E%0D%0A%20%20%20%20%3Cstop%20offset%3D%22.093%22%20style%3D%22stop-color%3A%239d9d9d%22%2F%3E%0D%0A%20%20%20%20%3Cstop%20offset%3D%22.142%22%20style%3D%22stop-color%3A%23777%22%2F%3E%0D%0A%20%20%20%20%3Cstop%20offset%3D%22.195%22%20style%3D%22stop-color%3A%23575757%22%2F%3E%0D%0A%20%20%20%20%3Cstop%20offset%3D%22.254%22%20style%3D%22stop-color%3A%233b3b3b%22%2F%3E%0D%0A%20%20%20%20%3Cstop%20offset%3D%22.32%22%20style%3D%22stop-color%3A%23252525%22%2F%3E%0D%0A%20%20%20%20%3Cstop%20offset%3D%22.397%22%20style%3D%22stop-color%3A%23141414%22%2F%3E%0D%0A%20%20%20%20%3Cstop%20offset%3D%22.493%22%20style%3D%22stop-color%3A%23090909%22%2F%3E%0D%0A%20%20%20%20%3Cstop%20offset%3D%22.627%22%20style%3D%22stop-color%3A%23020202%22%2F%3E%0D%0A%20%20%20%20%3Cstop%20offset%3D%221%22%20style%3D%22stop-color%3A%23000%22%2F%3E%0D%0A%20%20%3C%2FlinearGradient%3E%0D%0A%20%20%3Cpath%20d%3D%22M139.5%2063c-18.9%200-27.2%206.6-28.7%2011.5h54.7c.2-4.5-4.9-11.5-26-11.5z%22%20style%3D%22fill%3Aurl(%23b)%22%2F%3E%0D%0A%20%20%3ClinearGradient%20id%3D%22c%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%22-165.981%22%20y1%3D%22-13.554%22%20x2%3D%22704.257%22%20y2%3D%22436.446%22%3E%0D%0A%20%20%20%20%3Cstop%20offset%3D%220%22%20style%3D%22stop-color%3A%23fff%22%2F%3E%0D%0A%20%20%20%20%3Cstop%20offset%3D%22.007%22%20style%3D%22stop-color%3A%23f6f6f6%22%2F%3E%0D%0A%20%20%20%20%3Cstop%20offset%3D%22.048%22%20style%3D%22stop-color%3A%23c8c8c8%22%2F%3E%0D%0A%20%20%20%20%3Cstop%20offset%3D%22.093%22%20style%3D%22stop-color%3A%239d9d9d%22%2F%3E%0D%0A%20%20%20%20%3Cstop%20offset%3D%22.142%22%20style%3D%22stop-color%3A%23777%22%2F%3E%0D%0A%20%20%20%20%3Cstop%20offset%3D%22.195%22%20style%3D%22stop-color%3A%23575757%22%2F%3E%0D%0A%20%20%20%20%3Cstop%20offset%3D%22.254%22%20style%3D%22stop-color%3A%233b3b3b%22%2F%3E%0D%0A%20%20%20%20%3Cstop%20offset%3D%22.32%22%20style%3D%22stop-color%3A%23252525%22%2F%3E%0D%0A%20%20%20%20%3Cstop%20offset%3D%22.397%22%20style%3D%22stop-color%3A%23141414%22%2F%3E%0D%0A%20%20%20%20%3Cstop%20offset%3D%22.493%22%20style%3D%22stop-color%3A%23090909%22%2F%3E%0D%0A%20%20%20%20%3Cstop%20offset%3D%22.627%22%20style%3D%22stop-color%3A%23020202%22%2F%3E%0D%0A%20%20%20%20%3Cstop%20offset%3D%221%22%20style%3D%22stop-color%3A%23000%22%2F%3E%0D%0A%20%20%3C%2FlinearGradient%3E%0D%0A%20%20%3Cpath%20d%3D%22M273.5%20128.6c33.3%200%2062.7%2016.8%2080.1%2042.4V98.6c-1.5%200-3.1.1-4.6.1-27.9%200-49.3-7.7-49.3-20%200-13%2022.5-20.7%2051-20.7h2.9V0H0v66.2h50V43.5h18.7v54.2H50V72.4H0v255h353.6v-47.8c-17.4%2025.6-46.8%2042.4-80.1%2042.4-53.4%200-96.7-43.3-96.7-96.7s43.3-96.7%2096.7-96.7zm-16.6-88h18.7v57.1h-18.7V40.6zm-50.2%200h18.7v57.1h-18.7V40.6zm-23.8%2039h-72.3c.4%209.6%2016.6%2013.5%2035.3%2013.5%2013.4%200%2021.5-.9%2028.5-2l3.2%205.1c-6.6%201.1-17.9%202.4-34.2%202.4-31.7%200-50.6-7.9-50.6-19.6%200-11.7%2018.3-21%2048.3-21%2033.6%200%2042.5%2011.2%2042.5%2018.3-.1%201.4-.5%202.6-.7%203.3z%22%20style%3D%22fill%3Aurl(%23c)%22%2F%3E%0D%0A%3C%2Fsvg%3E%0D%0A");
+        }
+        .bg2 {
+            border-radius: 5px;
+            border: 4px solid var(--green);
+            background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzNTMuNiAzMjcuNCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMzUzLjYgMzI3LjQiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxsaW5lYXJHcmFkaWVudCBpZD0iYSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSIzMTEuNzg0IiB5MT0iNjEuMzc1IiB4Mj0iMzg0LjY2MyIgeTI9Ijk5LjA2MSI+PHN0b3Agb2Zmc2V0PSIwIiBzdHlsZT0ic3RvcC1jb2xvcjojZmZmIi8+PHN0b3Agb2Zmc2V0PSIuMDA3IiBzdHlsZT0ic3RvcC1jb2xvcjojZjZmNmY2Ii8+PHN0b3Agb2Zmc2V0PSIuMDQ4IiBzdHlsZT0ic3RvcC1jb2xvcjojYzhjOGM4Ii8+PHN0b3Agb2Zmc2V0PSIuMDkzIiBzdHlsZT0ic3RvcC1jb2xvcjojOWQ5ZDlkIi8+PHN0b3Agb2Zmc2V0PSIuMTQyIiBzdHlsZT0ic3RvcC1jb2xvcjojNzc3Ii8+PHN0b3Agb2Zmc2V0PSIuMTk1IiBzdHlsZT0ic3RvcC1jb2xvcjojNTc1NzU3Ii8+PHN0b3Agb2Zmc2V0PSIuMjU0IiBzdHlsZT0ic3RvcC1jb2xvcjojM2IzYjNiIi8+PHN0b3Agb2Zmc2V0PSIuMzIiIHN0eWxlPSJzdG9wLWNvbG9yOiMyNTI1MjUiLz48c3RvcCBvZmZzZXQ9Ii4zOTciIHN0eWxlPSJzdG9wLWNvbG9yOiMxNDE0MTQiLz48c3RvcCBvZmZzZXQ9Ii40OTMiIHN0eWxlPSJzdG9wLWNvbG9yOiMwOTA5MDkiLz48c3RvcCBvZmZzZXQ9Ii42MjciIHN0eWxlPSJzdG9wLWNvbG9yOiMwMjAyMDIiLz48c3RvcCBvZmZzZXQ9IjEiIHN0eWxlPSJzdG9wLWNvbG9yOiMwMDAiLz48L2xpbmVhckdyYWRpZW50PjxwYXRoIGQ9Ik0zMTguNiA3OC40YzAgOC41IDEzIDE1IDMxLjMgMTUgMS4zIDAgMi41IDAgMy43LS4xdi0zMGMtMS4xIDAtMi4yLS4xLTMuMy0uMS0yMi4xLjEtMzEuNyA3LjgtMzEuNyAxNS4yeiIgc3R5bGU9ImZpbGw6dXJsKCNhKSIvPjxsaW5lYXJHcmFkaWVudCBpZD0iYiIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSIxMDMuMTcyIiB5MT0iNTMuOTk1IiB4Mj0iMTk0LjM2IiB5Mj0iMTAxLjE0OSI+PHN0b3Agb2Zmc2V0PSIwIiBzdHlsZT0ic3RvcC1jb2xvcjojZmZmIi8+PHN0b3Agb2Zmc2V0PSIuMDA3IiBzdHlsZT0ic3RvcC1jb2xvcjojZjZmNmY2Ii8+PHN0b3Agb2Zmc2V0PSIuMDQ4IiBzdHlsZT0ic3RvcC1jb2xvcjojYzhjOGM4Ii8+PHN0b3Agb2Zmc2V0PSIuMDkzIiBzdHlsZT0ic3RvcC1jb2xvcjojOWQ5ZDlkIi8+PHN0b3Agb2Zmc2V0PSIuMTQyIiBzdHlsZT0ic3RvcC1jb2xvcjojNzc3Ii8+PHN0b3Agb2Zmc2V0PSIuMTk1IiBzdHlsZT0ic3RvcC1jb2xvcjojNTc1NzU3Ii8+PHN0b3Agb2Zmc2V0PSIuMjU0IiBzdHlsZT0ic3RvcC1jb2xvcjojM2IzYjNiIi8+PHN0b3Agb2Zmc2V0PSIuMzIiIHN0eWxlPSJzdG9wLWNvbG9yOiMyNTI1MjUiLz48c3RvcCBvZmZzZXQ9Ii4zOTciIHN0eWxlPSJzdG9wLWNvbG9yOiMxNDE0MTQiLz48c3RvcCBvZmZzZXQ9Ii40OTMiIHN0eWxlPSJzdG9wLWNvbG9yOiMwOTA5MDkiLz48c3RvcCBvZmZzZXQ9Ii42MjciIHN0eWxlPSJzdG9wLWNvbG9yOiMwMjAyMDIiLz48c3RvcCBvZmZzZXQ9IjEiIHN0eWxlPSJzdG9wLWNvbG9yOiMwMDAiLz48L2xpbmVhckdyYWRpZW50PjxwYXRoIGQ9Ik0xMzkuNSA2M2MtMTguOSAwLTI3LjIgNi42LTI4LjcgMTEuNWg1NC43Yy4yLTQuNS00LjktMTEuNS0yNi0xMS41eiIgc3R5bGU9ImZpbGw6dXJsKCNiKSIvPjxsaW5lYXJHcmFkaWVudCBpZD0iYyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSItMTY1Ljk4MSIgeTE9Ii0xMy41NTQiIHgyPSI3MDQuMjU3IiB5Mj0iNDM2LjQ0NiI+PHN0b3Agb2Zmc2V0PSIwIiBzdHlsZT0ic3RvcC1jb2xvcjojZmZmIi8+PHN0b3Agb2Zmc2V0PSIuMDA3IiBzdHlsZT0ic3RvcC1jb2xvcjojZjZmNmY2Ii8+PHN0b3Agb2Zmc2V0PSIuMDQ4IiBzdHlsZT0ic3RvcC1jb2xvcjojYzhjOGM4Ii8+PHN0b3Agb2Zmc2V0PSIuMDkzIiBzdHlsZT0ic3RvcC1jb2xvcjojOWQ5ZDlkIi8+PHN0b3Agb2Zmc2V0PSIuMTQyIiBzdHlsZT0ic3RvcC1jb2xvcjojNzc3Ii8+PHN0b3Agb2Zmc2V0PSIuMTk1IiBzdHlsZT0ic3RvcC1jb2xvcjojNTc1NzU3Ii8+PHN0b3Agb2Zmc2V0PSIuMjU0IiBzdHlsZT0ic3RvcC1jb2xvcjojM2IzYjNiIi8+PHN0b3Agb2Zmc2V0PSIuMzIiIHN0eWxlPSJzdG9wLWNvbG9yOiMyNTI1MjUiLz48c3RvcCBvZmZzZXQ9Ii4zOTciIHN0eWxlPSJzdG9wLWNvbG9yOiMxNDE0MTQiLz48c3RvcCBvZmZzZXQ9Ii40OTMiIHN0eWxlPSJzdG9wLWNvbG9yOiMwOTA5MDkiLz48c3RvcCBvZmZzZXQ9Ii42MjciIHN0eWxlPSJzdG9wLWNvbG9yOiMwMjAyMDIiLz48c3RvcCBvZmZzZXQ9IjEiIHN0eWxlPSJzdG9wLWNvbG9yOiMwMDAiLz48L2xpbmVhckdyYWRpZW50PjxwYXRoIGQ9Ik0yNzMuNSAxMjguNmMzMy4zIDAgNjIuNyAxNi44IDgwLjEgNDIuNFY5OC42Yy0xLjUgMC0zLjEuMS00LjYuMS0yNy45IDAtNDkuMy03LjctNDkuMy0yMCAwLTEzIDIyLjUtMjAuNyA1MS0yMC43aDIuOVYwSDB2NjYuMmg1MFY0My41aDE4Ljd2NTQuMkg1MFY3Mi40SDB2MjU1aDM1My42di00Ny44Yy0xNy40IDI1LjYtNDYuOCA0Mi40LTgwLjEgNDIuNC01My40IDAtOTYuNy00My4zLTk2LjctOTYuN3M0My4zLTk2LjcgOTYuNy05Ni43em0tMTYuNi04OGgxOC43djU3LjFoLTE4LjdWNDAuNnptLTUwLjIgMGgxOC43djU3LjFoLTE4LjdWNDAuNnptLTIzLjggMzloLTcyLjNjLjQgOS42IDE2LjYgMTMuNSAzNS4zIDEzLjUgMTMuNCAwIDIxLjUtLjkgMjguNS0ybDMuMiA1LjFjLTYuNiAxLjEtMTcuOSAyLjQtMzQuMiAyLjQtMzEuNyAwLTUwLjYtNy45LTUwLjYtMTkuNiAwLTExLjcgMTguMy0yMSA0OC4zLTIxIDMzLjYgMCA0Mi41IDExLjIgNDIuNSAxOC4zLS4xIDEuNC0uNSAyLjYtLjcgMy4zeiIgc3R5bGU9ImZpbGw6dXJsKCNjKSIvPjwvc3ZnPg==");
+        }
+        .bg3 {
+            border-radius: 5px;
+            border: 4px solid var(--red);
+            background: url("dest/svg/hello.svg");
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <img class="s green" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20353.6%20327.4%22%20style%3D%22enable-background%3Anew%200%200%20353.6%20327.4%22%20xml%3Aspace%3D%22preserve%22%3E%0D%0A%20%20%3ClinearGradient%20id%3D%22a%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%22311.784%22%20y1%3D%2261.375%22%20x2%3D%22384.663%22%20y2%3D%2299.061%22%3E%0D%0A%20%20%20%20%3Cstop%20offset%3D%220%22%20style%3D%22stop-color%3A%23fff%22%2F%3E%0D%0A%20%20%20%20%3Cstop%20offset%3D%22.007%22%20style%3D%22stop-color%3A%23f6f6f6%22%2F%3E%0D%0A%20%20%20%20%3Cstop%20offset%3D%22.048%22%20style%3D%22stop-color%3A%23c8c8c8%22%2F%3E%0D%0A%20%20%20%20%3Cstop%20offset%3D%22.093%22%20style%3D%22stop-color%3A%239d9d9d%22%2F%3E%0D%0A%20%20%20%20%3Cstop%20offset%3D%22.142%22%20style%3D%22stop-color%3A%23777%22%2F%3E%0D%0A%20%20%20%20%3Cstop%20offset%3D%22.195%22%20style%3D%22stop-color%3A%23575757%22%2F%3E%0D%0A%20%20%20%20%3Cstop%20offset%3D%22.254%22%20style%3D%22stop-color%3A%233b3b3b%22%2F%3E%0D%0A%20%20%20%20%3Cstop%20offset%3D%22.32%22%20style%3D%22stop-color%3A%23252525%22%2F%3E%0D%0A%20%20%20%20%3Cstop%20offset%3D%22.397%22%20style%3D%22stop-color%3A%23141414%22%2F%3E%0D%0A%20%20%20%20%3Cstop%20offset%3D%22.493%22%20style%3D%22stop-color%3A%23090909%22%2F%3E%0D%0A%20%20%20%20%3Cstop%20offset%3D%22.627%22%20style%3D%22stop-color%3A%23020202%22%2F%3E%0D%0A%20%20%20%20%3Cstop%20offset%3D%221%22%20style%3D%22stop-color%3A%23000%22%2F%3E%0D%0A%20%20%3C%2FlinearGradient%3E%0D%0A%20%20%3Cpath%20d%3D%22M318.6%2078.4c0%208.5%2013%2015%2031.3%2015%201.3%200%202.5%200%203.7-.1v-30c-1.1%200-2.2-.1-3.3-.1-22.1.1-31.7%207.8-31.7%2015.2z%22%20style%3D%22fill%3Aurl(%23a)%22%2F%3E%0D%0A%20%20%3ClinearGradient%20id%3D%22b%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%22103.172%22%20y1%3D%2253.995%22%20x2%3D%22194.36%22%20y2%3D%22101.149%22%3E%0D%0A%20%20%20%20%3Cstop%20offset%3D%220%22%20style%3D%22stop-color%3A%23fff%22%2F%3E%0D%0A%20%20%20%20%3Cstop%20offset%3D%22.007%22%20style%3D%22stop-color%3A%23f6f6f6%22%2F%3E%0D%0A%20%20%20%20%3Cstop%20offset%3D%22.048%22%20style%3D%22stop-color%3A%23c8c8c8%22%2F%3E%0D%0A%20%20%20%20%3Cstop%20offset%3D%22.093%22%20style%3D%22stop-color%3A%239d9d9d%22%2F%3E%0D%0A%20%20%20%20%3Cstop%20offset%3D%22.142%22%20style%3D%22stop-color%3A%23777%22%2F%3E%0D%0A%20%20%20%20%3Cstop%20offset%3D%22.195%22%20style%3D%22stop-color%3A%23575757%22%2F%3E%0D%0A%20%20%20%20%3Cstop%20offset%3D%22.254%22%20style%3D%22stop-color%3A%233b3b3b%22%2F%3E%0D%0A%20%20%20%20%3Cstop%20offset%3D%22.32%22%20style%3D%22stop-color%3A%23252525%22%2F%3E%0D%0A%20%20%20%20%3Cstop%20offset%3D%22.397%22%20style%3D%22stop-color%3A%23141414%22%2F%3E%0D%0A%20%20%20%20%3Cstop%20offset%3D%22.493%22%20style%3D%22stop-color%3A%23090909%22%2F%3E%0D%0A%20%20%20%20%3Cstop%20offset%3D%22.627%22%20style%3D%22stop-color%3A%23020202%22%2F%3E%0D%0A%20%20%20%20%3Cstop%20offset%3D%221%22%20style%3D%22stop-color%3A%23000%22%2F%3E%0D%0A%20%20%3C%2FlinearGradient%3E%0D%0A%20%20%3Cpath%20d%3D%22M139.5%2063c-18.9%200-27.2%206.6-28.7%2011.5h54.7c.2-4.5-4.9-11.5-26-11.5z%22%20style%3D%22fill%3Aurl(%23b)%22%2F%3E%0D%0A%20%20%3ClinearGradient%20id%3D%22c%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%22-165.981%22%20y1%3D%22-13.554%22%20x2%3D%22704.257%22%20y2%3D%22436.446%22%3E%0D%0A%20%20%20%20%3Cstop%20offset%3D%220%22%20style%3D%22stop-color%3A%23fff%22%2F%3E%0D%0A%20%20%20%20%3Cstop%20offset%3D%22.007%22%20style%3D%22stop-color%3A%23f6f6f6%22%2F%3E%0D%0A%20%20%20%20%3Cstop%20offset%3D%22.048%22%20style%3D%22stop-color%3A%23c8c8c8%22%2F%3E%0D%0A%20%20%20%20%3Cstop%20offset%3D%22.093%22%20style%3D%22stop-color%3A%239d9d9d%22%2F%3E%0D%0A%20%20%20%20%3Cstop%20offset%3D%22.142%22%20style%3D%22stop-color%3A%23777%22%2F%3E%0D%0A%20%20%20%20%3Cstop%20offset%3D%22.195%22%20style%3D%22stop-color%3A%23575757%22%2F%3E%0D%0A%20%20%20%20%3Cstop%20offset%3D%22.254%22%20style%3D%22stop-color%3A%233b3b3b%22%2F%3E%0D%0A%20%20%20%20%3Cstop%20offset%3D%22.32%22%20style%3D%22stop-color%3A%23252525%22%2F%3E%0D%0A%20%20%20%20%3Cstop%20offset%3D%22.397%22%20style%3D%22stop-color%3A%23141414%22%2F%3E%0D%0A%20%20%20%20%3Cstop%20offset%3D%22.493%22%20style%3D%22stop-color%3A%23090909%22%2F%3E%0D%0A%20%20%20%20%3Cstop%20offset%3D%22.627%22%20style%3D%22stop-color%3A%23020202%22%2F%3E%0D%0A%20%20%20%20%3Cstop%20offset%3D%221%22%20style%3D%22stop-color%3A%23000%22%2F%3E%0D%0A%20%20%3C%2FlinearGradient%3E%0D%0A%20%20%3Cpath%20d%3D%22M273.5%20128.6c33.3%200%2062.7%2016.8%2080.1%2042.4V98.6c-1.5%200-3.1.1-4.6.1-27.9%200-49.3-7.7-49.3-20%200-13%2022.5-20.7%2051-20.7h2.9V0H0v66.2h50V43.5h18.7v54.2H50V72.4H0v255h353.6v-47.8c-17.4%2025.6-46.8%2042.4-80.1%2042.4-53.4%200-96.7-43.3-96.7-96.7s43.3-96.7%2096.7-96.7zm-16.6-88h18.7v57.1h-18.7V40.6zm-50.2%200h18.7v57.1h-18.7V40.6zm-23.8%2039h-72.3c.4%209.6%2016.6%2013.5%2035.3%2013.5%2013.4%200%2021.5-.9%2028.5-2l3.2%205.1c-6.6%201.1-17.9%202.4-34.2%202.4-31.7%200-50.6-7.9-50.6-19.6%200-11.7%2018.3-21%2048.3-21%2033.6%200%2042.5%2011.2%2042.5%2018.3-.1%201.4-.5%202.6-.7%203.3z%22%20style%3D%22fill%3Aurl(%23c)%22%2F%3E%0D%0A%3C%2Fsvg%3E%0D%0A" alt="">
+        <img class="s red" src="./dest/svg/hello.svg" alt="">
+
+        <div class="s bg1"></div>
+        <div class="s bg2"></div>
+        <div class="s bg3"></div>
+
+        <div class="s green">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 353.6 327.4" style="enable-background:new 0 0 353.6 327.4" xml:space="preserve">
+              <linearGradient id="a" gradientUnits="userSpaceOnUse" x1="311.784" y1="61.375" x2="384.663" y2="99.061">
+                <stop offset="0" style="stop-color:#fff"/>
+                  <stop offset=".007" style="stop-color:#f6f6f6"/>
+                  <stop offset=".048" style="stop-color:#c8c8c8"/>
+                  <stop offset=".093" style="stop-color:#9d9d9d"/>
+                  <stop offset=".142" style="stop-color:#777"/>
+                  <stop offset=".195" style="stop-color:#575757"/>
+                  <stop offset=".254" style="stop-color:#3b3b3b"/>
+                  <stop offset=".32" style="stop-color:#252525"/>
+                  <stop offset=".397" style="stop-color:#141414"/>
+                  <stop offset=".493" style="stop-color:#090909"/>
+                  <stop offset=".627" style="stop-color:#020202"/>
+                  <stop offset="1" style="stop-color:#000"/>
+              </linearGradient>
+                        <path d="M318.6 78.4c0 8.5 13 15 31.3 15 1.3 0 2.5 0 3.7-.1v-30c-1.1 0-2.2-.1-3.3-.1-22.1.1-31.7 7.8-31.7 15.2z" style="fill:url(#a)"/>
+                        <linearGradient id="b" gradientUnits="userSpaceOnUse" x1="103.172" y1="53.995" x2="194.36" y2="101.149">
+                <stop offset="0" style="stop-color:#fff"/>
+                            <stop offset=".007" style="stop-color:#f6f6f6"/>
+                            <stop offset=".048" style="stop-color:#c8c8c8"/>
+                            <stop offset=".093" style="stop-color:#9d9d9d"/>
+                            <stop offset=".142" style="stop-color:#777"/>
+                            <stop offset=".195" style="stop-color:#575757"/>
+                            <stop offset=".254" style="stop-color:#3b3b3b"/>
+                            <stop offset=".32" style="stop-color:#252525"/>
+                            <stop offset=".397" style="stop-color:#141414"/>
+                            <stop offset=".493" style="stop-color:#090909"/>
+                            <stop offset=".627" style="stop-color:#020202"/>
+                            <stop offset="1" style="stop-color:#000"/>
+              </linearGradient>
+                        <path d="M139.5 63c-18.9 0-27.2 6.6-28.7 11.5h54.7c.2-4.5-4.9-11.5-26-11.5z" style="fill:url(#b)"/>
+                        <linearGradient id="c" gradientUnits="userSpaceOnUse" x1="-165.981" y1="-13.554" x2="704.257" y2="436.446">
+                <stop offset="0" style="stop-color:#fff"/>
+                            <stop offset=".007" style="stop-color:#f6f6f6"/>
+                            <stop offset=".048" style="stop-color:#c8c8c8"/>
+                            <stop offset=".093" style="stop-color:#9d9d9d"/>
+                            <stop offset=".142" style="stop-color:#777"/>
+                            <stop offset=".195" style="stop-color:#575757"/>
+                            <stop offset=".254" style="stop-color:#3b3b3b"/>
+                            <stop offset=".32" style="stop-color:#252525"/>
+                            <stop offset=".397" style="stop-color:#141414"/>
+                            <stop offset=".493" style="stop-color:#090909"/>
+                            <stop offset=".627" style="stop-color:#020202"/>
+                            <stop offset="1" style="stop-color:#000"/>
+              </linearGradient>
+                        <path d="M273.5 128.6c33.3 0 62.7 16.8 80.1 42.4V98.6c-1.5 0-3.1.1-4.6.1-27.9 0-49.3-7.7-49.3-20 0-13 22.5-20.7 51-20.7h2.9V0H0v66.2h50V43.5h18.7v54.2H50V72.4H0v255h353.6v-47.8c-17.4 25.6-46.8 42.4-80.1 42.4-53.4 0-96.7-43.3-96.7-96.7s43.3-96.7 96.7-96.7zm-16.6-88h18.7v57.1h-18.7V40.6zm-50.2 0h18.7v57.1h-18.7V40.6zm-23.8 39h-72.3c.4 9.6 16.6 13.5 35.3 13.5 13.4 0 21.5-.9 28.5-2l3.2 5.1c-6.6 1.1-17.9 2.4-34.2 2.4-31.7 0-50.6-7.9-50.6-19.6 0-11.7 18.3-21 48.3-21 33.6 0 42.5 11.2 42.5 18.3-.1 1.4-.5 2.6-.7 3.3z" style="fill:url(#c)"/>
+            </svg>
+
+        </div>
+    </div>
+</body>
+</html>
